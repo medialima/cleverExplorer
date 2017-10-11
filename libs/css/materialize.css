@@ -5200,13 +5200,13 @@ small {
 
 .btn:focus, .btn-large:focus,
 .btn-floating:focus {
-  background-color: #1d7d74;
+  background-color: #44ACEA;
 }
 
 .btn, .btn-large {
   text-decoration: none;
   color: #fff;
-  background-color: #26a69a;
+  background-color: #44ACEA;
   text-align: center;
   letter-spacing: .5px;
   -webkit-transition: .2s ease-out;
@@ -5215,7 +5215,7 @@ small {
 }
 
 .btn:hover, .btn-large:hover {
-  background-color: #2bbbad;
+  background-color: #44ACEA;
 }
 
 .btn-floating {
@@ -5228,7 +5228,7 @@ small {
   height: 40px;
   line-height: 40px;
   padding: 0;
-  background-color: #26a69a;
+  background-color: #44ACEA;
   border-radius: 50%;
   -webkit-transition: .3s;
   transition: .3s;
@@ -5237,7 +5237,7 @@ small {
 }
 
 .btn-floating:hover {
-  background-color: #26a69a;
+  background-color: #44ACEA;
 }
 
 .btn-floating:before {
@@ -5389,7 +5389,7 @@ button.btn-floating {
   z-index: -1;
   width: 40px;
   height: 40px;
-  background-color: #26a69a;
+  background-color: #44ACEA;
   border-radius: 50%;
   -webkit-transform: scale(0);
           transform: scale(0);
@@ -5563,11 +5563,11 @@ button.btn-floating {
 }
 
 .waves-effect.waves-green .waves-ripple {
-  background-color: rgba(76, 175, 80, 0.7);
+  background-color: #44ACEA;
 }
 
 .waves-effect.waves-teal .waves-ripple {
-  background-color: rgba(0, 150, 136, 0.7);
+  background-color: #44ACEA
 }
 
 .waves-effect input[type="button"], .waves-effect input[type="reset"], .waves-effect input[type="submit"] {
@@ -5854,9 +5854,9 @@ button.btn-floating {
 }
 
 .chips.focus {
-  border-bottom: 1px solid #26a69a;
-  -webkit-box-shadow: 0 1px 0 0 #26a69a;
-          box-shadow: 0 1px 0 0 #26a69a;
+  border-bottom: 1px solid #44ACEA;
+  -webkit-box-shadow: 0 1px 0 0 #44ACEA;
+          box-shadow: 0 1px 0 0 #44ACEA;
 }
 
 .chips:hover {
@@ -5864,7 +5864,7 @@ button.btn-floating {
 }
 
 .chips .chip.selected {
-  background-color: #26a69a;
+  background-color: #44ACEA;
   color: #fff;
 }
 
@@ -5951,12 +5951,12 @@ button.btn-floating {
 }
 
 select:focus {
-  outline: 1px solid #c9f3ef;
+  outline: 1px solid #44ACEA;
 }
 
 button:focus {
   outline: none;
-  background-color: #2ab7a9;
+  background-color: #44ACEA;
 }
 
 label {
@@ -5979,6 +5979,8 @@ label {
 ::placeholder {
   color: #d1d1d1;
 }
+
+/* Style Placeholders */
 
 /* Text inputs */
 input:not([type]),
