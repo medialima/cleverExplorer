@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cleverflow</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="libs/css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="libs/css/estilo.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="js/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="css/sweetalert.css" />
+    <script type="text/javascript" src="libs/js/jquery-3.2.1.min.js"></script>
+    <script>
+  
+    $(document).ready(function(){
+      $('.parallax').parallax();
+      $('#form1, #form2').hide();
+      $('#iniSesion').click(function(){
+        $(this).hide();
+        $('#form1').show();
+        /*if($(window).width()>767){
+            alert("pantalla desk");
+        }else{
+            alert("pantalla mobil");
+        }
+        //$('#parallax1').css('height', '700px'); */
+        });
+        $('#iniSesion2').click(function(){
+        $('#form2').show();
+        //$('#parallax2').css('height', '700px');
+        });
+    });
+    </script>
+</head>
+<body>
+    <div class="parallax-container" id="parallax1">
+      <div class="parallax"><img src="libs/img/p1.jpg"></div>
+      <div class="row padSeccion">
+        <div class="col s12 m4 offset-m8">
+            <img src="libs/img/u5.png" alt="" width="100%">
+        </div>
+        <div class="container">
+        	<div class="col s12 center">
+	            <img src="libs/img/u12.svg" alt="" width="50px">
+	            <br>
+                <h1 class="white-text">Influencers Explorer</h1>
+                <br>
+                <p class="white-text">Navega por nuestra base de datos e identifica a los influencers id&oacute;neos para tu marca.</p>
+                <br>
+                <a class="btn botonclever" id="iniSesion">Iniciar sesi&oacute;n</a>
+                <div class="col s12 miniform" id="form1">
+                    <div class="col s12 m4">
+                        <div class="input-field col s12">
+                            <input placeholder="Correo Electrónico" type="text" id="mail">
+                        </div>
+                    </div>
+                    <div class="col s12 m4">
+                        <div class="input-field col s12">
+                            <input placeholder="Password" type="password" id="pass">
+                        </div>
+                    </div>
+                    <div class="col s12 m4">
+                        <div class="input-field col s12">
+                            <a class="btn light-blue darken-4" id="enter">Iniciar Sesi&oacute;n</a>
+                        </div>
+                    </div>
+                </div>
+	        </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+        <div class="container center">
+            <h1>01 Navega</h1>
+            <div class="col s12 m6"><i class="medium material-icons">face</i><img src="libs/img/u35.gif" width="50px"></div>
+            <div class="col s12 m6">
+                <p>Navega por nuestra amplia base de m&aacute;s de <span class="azulclever">6,500</span> influencers.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row descubre white-text padSeccion">
+        <div class="container">
+                <h1 class="white-text center">02 Descubre</h1>
+                <p class="white-text center">Descubre y filtra tus resultados con base en m&aacute;s de <span class="azulclever">40</span> caracter&iacute;sticas diferentes.</p>
+        </div>
+        <div class="col s12 m4">
+            <p class="white-text"><img src="libs/img/genero.svg" alt="" width="20px" class="azulclever"> G&eacute;nero del Influencer</p>
+            <p class="white-text"><img src="libs/img/edad.svg" alt="" width="20px"> Edad del Influencer</p>
+            <p class="white-text"><img src="libs/img/catego.svg" alt="" width="20px"> Categor&iacute;a</p>
+            <p class="white-text"><img src="libs/img/alcance.svg" alt="" width="20px"> Alcance</p>
+            <p class="white-text"><img src="libs/img/tematica.svg" alt="" width="20px"> Tem&aacute;tica</p>
+        </div>
+        <div class="col s12 m4">
+            <p class="white-text"><img src="libs/img/contenido.svg" alt="" width="20px"> Tipo de Contenido</p>
+            <p class="white-text"><img src="libs/img/ubicacion.svg" alt="" width="20px"> Ubicaci&oacute;n Geogr&aacute;fica del Influencer</p>
+            <p class="white-text"><img src="libs/img/influencia.svg" alt="" width="20px"> Influencia</p>
+            <p class="white-text"><img src="libs/img/u53.svg" alt="" width="20px"> G&eacute;nero de los Seguidores</p>
+            <p class="white-text"><img src="libs/img/u53.svg" alt="" width="20px"> Grupos de Edad de los Seguidores</p>
+        </div>
+        <div class="col s12 m4">
+            <p class="white-text"><img src="libs/img/distrib.svg" alt="" width="20px"> Distribuci&oacute;n Geogr&aacute;fica de la Audiencia</p>
+            <p class="white-text"><img src="libs/img/redSocial.svg" alt="" width="20px"> Red Social</p>
+            <p class="white-text"><img src="libs/img/personalidad.svg" alt="" width="20px"> Personalidad del Influencer</p>
+            <p class="white-text"><img src="libs/img/engagemet.svg" alt="" width="20px"> Engagement Rate</p>
+            <p class="white-text"><img src="libs/img/precio.svg" alt="" width="20px"> Costo por Interacci&oacute;n</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="container center">
+                <h1>03 Arma tu Campa&ntilde;a</h1>
+                <div class="col s12 m6">
+                    <p>Selecciona influencers afines y conoce de inmediato los posibles alcances de tu campa&ntilde;a. Los grupos que generes pueden ser exportados a nuestra plataforma para su futura ejecuci&oacute;n.</p>
+                </div>
+                <div class="col s12 m6"><img src="libs/img/u135.gif" alt="" width="100%"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="container center">
+            <hr>
+        </div>
+    </div>
+    <div class="row">
+        <div class="container center">
+            <h1>04 Genera Presentaciones</h1>
+            <div class="col s12 m6"><img src="libs/img/u142.png" alt="" width="100%"></div>
+            <div class="col s12 m6">
+                <p>Genera tus presentaciones, ideales para tus propuestas y/o reportes.</p>
+            </div>
+        </div>
+    </div>
+    <div class="parallax-container" id="parallax2">
+        <div class="parallax"><img src="libs/img/u169.jpg"></div>
+        <div class="row acceso padSeccion">
+            <div class="container center">
+                <h1 class="white-text">¿A&uacute;n no tienes acceso?</h1>
+                <div class="col s12 m6">
+                        <a class="btn botonclever" id="iniSesion2">Solicitar Acceso</a>
+                </div>
+                <div class="col s12 m6 miniform" id="form2">
+                    <div class="col s12">
+                        <div class="input-field col s12">
+                            <input placeholder="Agencia/Empresa" type="text">
+                        </div>
+                    </div>
+                    <div class="col s12">
+                        <div class="input-field col s12">
+                            <input placeholder="Nombre" type="text">
+                        </div>
+                    </div>
+                    <div class="col s12">
+                            <div class="input-field col s12">
+                                <input placeholder="Correo Electr&oacute;nico" type="text">
+                            </div>
+                    </div>
+                    <div class="col s12">
+                            <div class="input-field col s12">
+                                <input placeholder="Tel&eacute;fono" type="text">
+                            </div>
+                    </div>
+                    <div class="col s12">
+                        <div class="input-field col s12">
+                            <a class="btn light-blue darken-4">Iniciar Sesi&oacute;n</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer">
+        <div class="row pie">
+            <div class="col s12 m3" id="redes">
+                <div class="col s3">
+                    <img src="libs/img/u155.svg" alt="" width="100%">
+                </div>
+                <div class="col s3">
+                    <img src="libs/img/u157.svg" alt="" width="100%">
+                </div>
+                <div class="col s3">
+                    <img src="libs/img/u159.svg" alt="" width="100%">
+                </div>
+                <div class="col s3">
+                    <img src="libs/img/u161.svg" alt="" width="100%">
+                </div>
+            </div>
+            <div class="col s12 m6 center" id="footCenter">
+                <div class="col s12 m6">
+                    <a href="#" class="white-text">T&eacute;rminos y Condiciones</a>
+                </div>
+                <div class="col s12 m6">
+                    <a href="#" class="white-text">Aviso de Privacidad</a>
+                </div>
+            </div>
+            <div class="col s12 m3">
+                <img src="libs/img/u5.png" alt="" width="100%">
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="libs/js/materialize.min.js"></script>
+    <script>
+             $( "#enter" ).click(function(event) {
+                alert("asdhd");
+                    event.preventDefault();
+                    // Validate Credentials (GET http://cleverflowcoreapi.azurewebsites.net/api/influencers/validate_credentials)
+                
+                        jQuery.ajax({
+                        url: "php/validateCredentials.php",
+                        type: "POST",
+                        data: {
+                            "mail_address":$("#mail").val(),
+                            "password": $("#pass").val()
+                        },
+                        dataType: "json"                               
+                        })
+                        .done(function(data, textStatus, jqXHR) {
+                            console.log("HTTP Request Succeeded: " + jqXHR.status);
+                            console.log(data);
+                            
+                            if (data["message"]=="Credentials are valid") {
+                                $("#form").append('<input type="hidden" name="UUID" value="'+data["response_object"]["uuid"]+'" />');
+                                $("#form").append('<input type="hidden" name="name" value="'+data["response_object"]["mail_address"]+'" />');
+                                 $("#form").append('<input type="hidden" name="mail" value="'+data["response_object"]["mail_address"]+'" />');
+                                $("#form").submit();
+                               
+                            }else  if (data["message"]=="Address is not registered."){
+                                swal({
+                                    title: 'Error',
+                                    html: true,
+                                    text: "<i>No existe ningún usuario registrado con este identificador.</i>",
+                                    type: 'error',
+                                    showCancelButton: false,
+                                    confirmButtonColor: '#DD6B55',
+                                 });
+                                
+                            }else  if (data["message"]=="Password is incorrect."){
+                                swal({
+                                    title: 'Error',
+                                    html: true,
+                                    text: "<i>La Contraseña introducida es errónea.</i>",
+                                    type: 'error',
+                                    showCancelButton: false,
+                                    confirmButtonColor: '#DD6B55',
+                                 });
+                                
+                            }
+                            
+                            
+                        })
+                        .fail(function(jqXHR, textStatus, errorThrown) {
+                            //console.log("HTTP Request Failed"+jqXHR+textStatus+errorThrown);
+                            console.log(jqXHR.responseText);
+                             swal({
+                                    title: 'Error',
+                                    text: 'Faltan datos',
+                                    type: 'error',
+                                    showCancelButton: false,
+                                    confirmButtonColor: '#DD6B55',
+                                 });
+                            
+                        })
+                        .always(function() {
+                            
+                        });
+                   
+                    
+                    
+              
+              });
+
+
+    </script>
+</body>
+</html>

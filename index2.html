@@ -1,0 +1,146 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cleverflow | México</title>
+        <link rel="stylesheet" href="css/foundation.css" />
+        <script src="js/vendor/modernizr.js"></script>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
+        <script src="js/sweetalert.min.js"></script>
+        
+        <link rel="stylesheet" href="css/sweetalert.css" />
+    </head>
+    <body class="login-bg">
+        <div id="wrapper">
+
+           <!-- <div class="nav">
+
+                <div class="cleverflow-logo"></div>
+                <div class="navigation"><a href="#"></a></div>
+
+            </div>                 Juan carlos me pidió ver como se veía sin menú ya que no tenia mucho sentido. solo el boton de home manda al index del sitio     --> 
+            <div class="row">
+                <div class="large-12 columns">
+                        <div class="login-box">
+                    
+                        <div class="logo"><a href="index.php"></a></div>
+                        <div class="user-box">
+                            <a href="#" class="user-log active">Influenciador</a>
+                            <a href="#" class="user-log">Anunciante</a>
+                        </div>
+                        <form id="login" name="" method="post" action="" class="form-login">
+                            <input type="text" placeholder="Cuenta Influenciador" id="user"class="in-300">
+                            <label class="msj-input" >Nombre no válido, favor de revisar *</label> <!-- hardcode display  -->
+                            <input type="password" placeholder="Contraseña" id="pass" class="in-300 top-20 login">
+                            <label class="msj-input" >Contraseña no válida, favor de revisar *</label>
+                            <input type="submit" id="entrar"class="btn-one top-30" value="Entrar">
+                            
+                        </form>
+                        <div style="text-align: center;font-size: 10pt;">
+                            <a href="recuperar-password.php">He olvidado mi<strong> password</strong></a>
+                        </div>                        
+                        <div class="new-usr">
+                            <a href="reg-influencer.html" class="new-infl">Crear cuenta de <strong>Influencer</strong></a>
+                            <a href="reg-anunciante.html" class="new-anun">Crear cuenta de <strong>Anunciante</strong></a>
+                        </div>
+                        <div class="legales">
+                            <ul>
+                                <li><a href="#">Terminos y condiciones</a> </li>
+                                <li><a href="#">Politicas de privacidad</a> </li>
+                                <li><a href="#">Código de ética</a> </li>
+                            </ul>
+                        </div>
+                        <form action="php/start.php" id="form" method="POST"></form>
+                    
+                </div>
+                </div>
+            </div>
+
+        </div><!--Wraper-->
+
+
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/foundation.min.js"></script>
+        <script>
+            $(document).foundation();
+            $( ".user-log" ).click(function() {
+                
+                    $(".active").removeClass("active");
+                     $(this).addClass('active');
+                     if ($(this).text()=="Influencer") {
+                         $("#user").attr("placeholder", "Cuenta "+$(this).text());
+                     }else{
+                        $("#user").attr("placeholder", "Cuenta "+ $(this).text());
+                        
+                     }
+                     
+              });
+             $( "#entrar" ).click(function(eventt) {
+                    event.preventDefault();
+                    // Validate Credentials (GET http://cleverflowcoreapi.azurewebsites.net/api/influencers/validate_credentials)
+                   if ($(".active").html()=="Anunciante") {
+                            swal({
+                                    title: 'Error',
+                                    text: "Credenciales de anunciante inválidas",
+                                    type: 'error',
+                                    showCancelButton: false,
+                                    confirmButtonColor: '#DD6B55',
+                                 });
+                   }else{
+                        jQuery.ajax({
+                        url: "php/validateCredentials.php",
+                        type: "POST",
+                        data: {
+                            "mail_address":$("#user").val(),
+                            "password": $("#pass").val()
+                        },
+                        dataType: "json"                               
+                        })
+                        .done(function(data, textStatus, jqXHR) {
+                            console.log("HTTP Request Succeeded: " + jqXHR.status);
+                            console.log(data);
+                            
+                            if (data["message"]=="Credentials are valid") {
+                                $("#form").append('<input type="hidden" name="UUID" value="'+data["response_object"]["uuid"]+'" />');
+                                $("#form").append('<input type="hidden" name="name" value="'+data["response_object"]["first_name"]+'" />');
+                                $("#form").submit();
+                               
+                            }else {
+                                swal({
+                                    title: 'Error',
+                                    text: data["message"],
+                                    type: 'error',
+                                    showCancelButton: false,
+                                    confirmButtonColor: '#DD6B55',
+                                 });
+                                
+                            }
+                            
+                            
+                        })
+                        .fail(function(jqXHR, textStatus, errorThrown) {
+                            console.log("HTTP Request Failed");
+                             swal({
+                                    title: 'Error',
+                                    text: 'Faltan datos',
+                                    type: 'error',
+                                    showCancelButton: false,
+                                    confirmButtonColor: '#DD6B55',
+                                 });
+                            
+                        })
+                        .always(function() {
+                            
+                        });
+                   }
+                    
+                    
+              
+              });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch Beta 3.4 (15460) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape Copy 3 + Shape Copy Copy</title>
+    <desc>Created with Sketch Beta.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Dashboard-OK" sketch:type="MSArtboardGroup" transform="translate(-1122.000000, -85.000000)" fill="#00C248">
+            <g id="Shape-Copy-3-+-Shape-Copy-Copy" sketch:type="MSLayerGroup" transform="translate(1122.000000, 84.000000)">
+                <path d="M12,1 C5.38302649,1 1.0658141e-13,6.38302649 1.0658141e-13,13 C1.0658141e-13,19.6169735 5.38302649,25 12,25 C18.6169735,25 24,19.6169735 24,13 C24,6.38302649 18.6169735,1 12,1 L12,1 Z M12,24.0202882 C5.92333755,24.0202882 0.979711801,19.0766624 0.979711801,13 C0.979711801,6.92333755 5.92333755,1.9797118 12,1.9797118 C18.0766624,1.9797118 23.0202882,6.92333755 23.0202882,13 C23.0202882,19.0766624 18.0766624,24.0202882 12,24.0202882 L12,24.0202882 Z" id="Shape-Copy-3" sketch:type="MSShapeGroup"></path>
+                <text id="€" sketch:type="MSTextLayer" font-family="Open Sans" font-size="16" font-weight="normal">
+                    <tspan x="7" y="19">€</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

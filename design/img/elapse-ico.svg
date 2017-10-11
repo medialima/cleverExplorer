@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-1">
+            <g id="Group-2" transform="translate(5.000000, 4.000000)">
+                <circle id="Oval-1" stroke="#505050" stroke-width="4" cx="95" cy="95" r="95"></circle>
+                <g id="notes" opacity="0.739583333" transform="translate(40.000000, 48.000000)"></g>
+            </g>
+            <g id="arrow-down-sign-to-navigate" opacity="0.65508381" transform="translate(45.000000, 69.000000)"></g>
+            <g id="stopwatch" filter="url(#filter-1)" opacity="0.717334692" transform="translate(38.000000, 35.000000)" fill="#000000">
+                <g id="Capa_1">
+                    <g id="Group">
+                        <path d="M62.5,0 C61.3479167,0 60.4166667,0.93125 60.4166667,2.08333333 L60.4166667,29.775 C60.4166667,30.9270833 61.3479167,31.8583333 62.5,31.8583333 C63.6520833,31.8583333 64.5833333,30.9270833 64.5833333,29.775 L64.5833333,4.20416667 C95.7895833,5.30416667 120.833333,31.0333333 120.833333,62.5 C120.833333,94.6645833 94.6645833,120.833333 62.5,120.833333 C30.3354167,120.833333 4.16666667,94.6645833 4.16666667,62.5 C4.16666667,46.9583333 10.2083333,32.3354167 21.1791667,21.325 C21.99375,20.5083333 21.9895833,19.1916667 21.175,18.3791667 C20.3583333,17.5708333 19.0416667,17.5708333 18.2291667,18.3833333 C6.47291667,30.1791667 0,45.8479167 0,62.5 C0,96.9625 28.0375,125 62.5,125 C96.9625,125 125,96.9625 125,62.5 C125,28.0375 96.9625,0 62.5,0 L62.5,0 Z" id="Shape"></path>
+                        <path d="M59.4895833,69.8583333 C60.76875,71.61875 62.7458333,72.725 64.9145833,72.89375 C65.1083333,72.9104167 65.3020833,72.9166667 65.49375,72.9166667 C67.45625,72.9166667 69.34375,72.1416667 70.7416667,70.7416667 C72.2770833,69.20625 73.0625,67.0833333 72.89375,64.9145833 C72.725,62.7458333 71.61875,60.76875 69.8541667,59.4854167 L42.8875,39.9791667 C42.0625,39.3833333 40.91875,39.475 40.19375,40.1958333 C39.46875,40.9208333 39.3791667,42.0625 39.9770833,42.8895833 L59.4895833,69.8583333 L59.4895833,69.8583333 Z M67.40625,62.8583333 C68.1791667,63.4208333 68.6645833,64.2895833 68.7395833,65.2416667 C68.8145833,66.1916667 68.46875,67.1229167 67.7958333,67.7979167 C67.1208333,68.4708333 66.1729167,68.8145833 65.2375,68.7416667 C64.2875,68.66875 63.41875,68.18125 62.8604167,67.4145833 L50.9583333,50.9625 L67.40625,62.8583333 L67.40625,62.8583333 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

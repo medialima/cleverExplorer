@@ -1,0 +1,346 @@
+<?php 
+session_start();
+require 'php/timeout.php';
+//include 'php/getTopNotificationsInside.php';
+echo $_SESSION["UUID"];
+?>
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Cleverflow | España</title>
+        <link rel="stylesheet" href="css/foundation.css" />
+        <script src="js/vendor/modernizr.js"></script>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" media="all" href="css/jquery.circliful.css">
+        <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.circliful.min.js"></script>
+         <script src="js/sweetalert.min.js"></script>
+        <link rel="stylesheet" href="css/sweetalert.css"/>
+
+    </head>
+    <body class="login-bg">
+
+        <div id="wrapper">
+           <?include 'layout/topA.php';
+                ?> 
+                <div class="row">
+                    <div class="large-12 columns">
+                        <div class="w1 full">
+                            <div class="brand-tit">Perfíl</div>                         
+                        </div>
+                    </div>
+                </div><!--row-->   
+           
+           
+            <div class="row">
+                <div class="large-12 medium-12 small-12 columns">
+                    
+                    <div class="large-3 medium-3 small-12 columns"><div class="camp-tit">Datos generales</div></div>
+
+                    <div class="large-8 medium-8 small-12 columns">
+                         <div class="large-6 small-12 columns">
+                           <div class="camp-tit-sec">Industria / Categoría</div>   
+                         </div>
+                         <div class="large-6 small-12 columns">
+
+                              <select id="type" class="select-full">
+                                <option value="">Tipo de anunciante</option>
+                                <option value="0">Marca</option>
+                                <option value="1">Persona</option>
+                            </select>
+                                <!--span alert-->
+                         </div>    
+                     </div>
+                </div>
+            </div>
+                <div class="row">
+                    <div class="large-12 medium-12 small-12 columns">
+
+                        <div class="large-3 medium-3 small-12 columns">&nbsp;</div>
+
+                        <div class="large-8 medium-8 small-12 columns">
+                            <div class="large-6 small-12 columns">
+                                <div class="camp-tit-sec">Nombre</div>   
+                            </div>
+                            <div class="large-6 small-12 columns">
+
+                                <input type="text" placeholder="Nombre" class="in-full">
+                                <!-- <span class="input-alert">Campo requerido</span>-->
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-12 medium-12 small-12 columns">
+
+                        <div class="large-3 medium-3 small-12 columns">&nbsp;</div>
+
+                        <div class="large-8 medium-8 small-12 columns">
+                            <div class="large-6 small-12 columns">
+                                <div class="camp-tit-sec">Descripción</div>   
+                            </div>
+                            <div class="large-6 small-12 columns">
+
+                                <input type="text" placeholder="Descripción" class="in-full">
+                                <!-- <span class="input-alert">Campo requerido</span>-->
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-12 medium-12 small-12 columns">
+
+                        <div class="large-3 medium-3 small-12 columns">&nbsp;</div>
+
+                        <div class="large-8 medium-8 small-12 columns">
+                            <div class="large-6 small-12 columns">
+                                <div class="camp-tit-sec">Sitio web</div>   
+                            </div>
+                            <div class="large-6 small-12 columns">
+
+                                <input type="text" placeholder="http://www..." class="in-full">
+                                <!-- <span class="input-alert">Campo requerido</span>-->
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-12 medium-12 small-12 columns">
+
+                        <div class="large-3 medium-3 small-12 columns">&nbsp;</div>
+
+                        <div class="large-8 medium-8 small-12 columns">
+                            <div class="large-6 small-12 columns">
+                                <div class="camp-tit-sec">Logo</div>   
+                            </div>
+                            <div class="large-6 small-12 columns">
+
+                                <div>
+                                <button class="file-upload">            
+                                    <input type="file" class="file-input">Subir logo</button>
+                                </div>
+                                <div>
+                                    <div class="file-box" style="display:none">Bimbo-logo.jpg</div>
+                                    <button class="file-delete">Eliminar</button>           
+                                    
+                                </div>
+                                <!-- <span class="input-alert">Campo requerido</span>-->
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-12 medium-12 small-12 columns">
+
+                        <div class="large-3 medium-3 small-12 columns">&nbsp;</div>
+
+                        <div class="large-8 medium-8 small-12 columns">
+                            <div class="large-6 small-12 columns">
+                                <div class="camp-tit-sec">Descripción de la marca</div>   
+                            </div>
+                            <div class="large-6 small-12 columns">
+                                <textarea class="full-comment2"></textarea>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                 <div class="row">
+                    <div class="large-12 medium-12 small-12 columns">
+
+                        <div class="large-3 medium-3 small-12 columns"><div class="camp-tit">Información de facturación</div></div>
+
+                        <div class="large-8 medium-8 small-12 columns">
+                            <div class="large-6 small-12 columns">
+                                <div class="camp-tit-sec">Razón social</div>   
+                            </div>
+                            <div class="large-6 small-12 columns">
+                                <input type="text" placeholder="Razón Social" class="in-full"> 
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                 <div class="row">
+                    <div class="large-12 medium-12 small-12 columns">
+
+                        <div class="large-3 medium-3 small-12 columns">&nbsp;</div>
+
+                        <div class="large-8 medium-8 small-12 columns">
+                            <div class="large-6 small-12 columns">
+                                <div class="camp-tit-sec">CIF</div>   
+                            </div>
+                            <div class="large-6 small-12 columns">
+                               <input type="text" placeholder="CIF" class="in-full"> 
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                 <div class="row">
+                    <div class="large-12 medium-12 small-12 columns">
+
+                        <div class="large-3 medium-3 small-12 columns">&nbsp;</div>
+
+                        <div class="large-8 medium-8 small-12 columns">
+                            <div class="large-6 small-12 columns">
+                                <div class="camp-tit-sec">Domicilio fiscal</div>   
+                            </div>
+                            <div class="large-6 small-12 columns">
+                               <input type="text" placeholder="Dirección / Vía / Número" class="in-full"> 
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-12 medium-12 small-12 columns">
+
+                        <div class="large-3 medium-3 small-12 columns">&nbsp;</div>
+
+                        <div class="large-8 medium-8 small-12 columns">
+                            <div class="large-6 small-12 columns">
+                                <div class="camp-tit-sec">&nbsp;</div>   
+                            </div>
+                            <div class="large-6 small-12 columns">
+
+                                    <select id="municipio" class="select-middle">
+                                        <option value="">Municipio</option>
+                                        <option value="">Derecho</option>
+                                        <option value="">Comunicaciones</option>
+                                        <option value="">Periodismo</option>
+                                        <option value="">Ingeniería</option>
+                                        <option value="">Salud</option>
+                                    </select>
+
+                                    
+
+                                    <select id="carrera" class="select-middle ml15">
+                                        <option value="">Provincia</option>
+                                        <option value="">Derecho</option>
+                                        <option value="">Comunicaciones</option>
+                                        <option value="">Periodismo</option>
+                                        <option value="">Ingeniería</option>
+                                        <option value="">Salud</option>
+                                    </select>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+             <div class="separator"></div> 
+             <div class="row">
+                <div class="large-12 medium-12 small-12 columns">
+                    
+                    <div class="large-3 medium-3 small-12 columns"><div class="camp-tit">Presupuesto</div></div>
+
+                    <div class="large-8 medium-8 small-12 columns">
+                         <div class="large-6 small-12 columns">
+                           <div class="camp-tit-sec">Recursos disponibles</div>   
+                         </div>
+                         <div class="large-6 small-12 columns">
+
+                             <div class="mb15">1,000000</div>
+                                <!--span alert-->
+                         </div>    
+                     </div>
+                </div>
+            </div>
+             <div class="row">
+                    <div class="large-12 medium-12 small-12 columns">
+
+                        <div class="large-3 medium-3 small-12 columns">&nbsp;</div>
+
+                        <div class="large-8 medium-8 small-12 columns">
+                            <div class="large-6 small-12 columns">
+                                <div class="camp-tit-sec">Presupuesto actual</div>   
+                            </div>
+                            <div class="large-6 small-12 columns">
+                               <div class="mb15">0.0</div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+             <div class="row">
+                    <div class="large-12 medium-12 small-12 columns">
+
+                        <div class="large-3 medium-3 small-12 columns">&nbsp;</div>
+
+                        <div class="large-8 medium-8 small-12 columns">
+                            <div class="large-6 small-12 columns">
+                                <div class="camp-tit-sec">Incrementar presupuesto</div>   
+                            </div>
+                            <div class="large-6 small-12 columns">
+                               <input type="text" placeholder="00.0" class="in-full"> 
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+             <div class="row">
+                    <div class="large-12 medium-12 small-12 columns">
+
+                        <div class="large-3 medium-3 small-12 columns">&nbsp;</div>
+
+                        <div class="large-8 medium-8 small-12 columns">
+                            <div class="large-6 small-12 columns">
+                                <div class="camp-tit-sec">&nbsp;</div>   
+                            </div>
+                            <div class="large-6 small-12 columns">
+                               <input type="text" placeholder="Concepto del monto" class="in-full"> 
+                               <button class="btn-four fixy">Incrementar presupuesto</button>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+             
+             <div class="row">
+                    <div class="large-12 medium-12 small-12 columns">
+
+                        <div class="large-3 medium-3 small-12 columns">&nbsp;</div>
+
+                        <div class="large-8 medium-8 small-12 columns">
+                            <div class="large-6 small-12 columns">
+                                <div class="camp-tit-sec">Disminuír presupuesto</div>   
+                            </div>
+                            <div class="large-6 small-12 columns">
+                               <input type="text" placeholder="00.0" class="in-full"> 
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+             <div class="row">
+                    <div class="large-12 medium-12 small-12 columns">
+
+                        <div class="large-3 medium-3 small-12 columns">&nbsp;</div>
+
+                        <div class="large-8 medium-8 small-12 columns">
+                            <div class="large-6 small-12 columns">
+                                <div class="camp-tit-sec">&nbsp;</div>   
+                            </div>
+                            <div class="large-6 small-12 columns">
+                               <input type="text" placeholder="Concepto del monto" class="in-full"> 
+                                <button class="btn-four fixy red">Disminuir presupuesto</button>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+
+             
+                <div class="row">
+                    <div class="large-12 columns">
+                    <div class="btn-wrap">
+                        <input type="submit" class="btn-four right-b" id="crear" value="Guardar cambios">
+                        <input type="submit" class="btn-five left-b" id="cancelar" value="Cancelar">
+                       
+                    </div>
+                </div>
+                    
+            </div><!--dash-->  
+            <?include 'layout/footer.php'?>
+            </div><!--Wraper-->
+            <div class="load"></div>
+            <script src="js/vendor/jquery.js"></script>
+            <script src="js/foundation.min.js"></script>
+            <script src="js/circle.js"></script>
+    </body>
+</html>

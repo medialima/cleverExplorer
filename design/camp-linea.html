@@ -1,0 +1,273 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Cleverflow | México</title>
+        <link rel="stylesheet" href="css/foundation.css" />
+        <script src="js/vendor/modernizr.js"></script>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>   
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+
+    </head>
+    <body class="login-bg">
+
+        <div id="wrapper">
+
+
+
+            <div class="dashboard">
+
+
+                <!--row--><!--row--><!--AFTER DASH --><!--row--><!--row-->
+
+                <div class="row">
+                    <div class="large-12 columns">
+                        <div class="w1 full">
+                            <div class="brand-tit">Módulo CPC / Crear nueva línea de comunicación</div>   
+                            <div class="camp-steps">
+                                <h1>PASO 1 de 3 <span>INFORMACIÓN GENERAL</span></h1>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--row-->
+
+                <div class="row mt20">
+                    <div class="large-6 medium-6 small-12 columns">
+                        <div class='smart-box'>
+                            <div class="reg-tit-smart"><span class="reg-tit-span">Nombre de la línea de comunicación</span><span class="input-alert" style="hidden">Indica el nombre con el cual deseas que sea identificada esta línea de comunicación.</span></div>
+                            <input type="text" class="in220-btm" placeholder="Nombre de la marca" value="Nombre"> 
+                        </div>
+                    </div>
+                    <div class="large-6 medium-6 small-12 columns">
+                        <div class='smart-box'>
+                            <div class="reg-tit-smart"><span class="reg-tit-span">Prespuesto disponible</span><span class="input-alert" style="hidden">Indica el porcentaje de presupuesto que deseas asignar a esta línea de comunicación.</span></div>
+                            <select id="municipio" class="select-two">
+                                <option value="">10%</option>
+                                <option value="">20%</option>
+                                <option value="">30%</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt20">
+
+                    <div class="large-6 medium-6 small-12 columns">
+                        <div class='smart-box'>
+                            <div class="reg-tit-smart"><span class="reg-tit-span">Oferta mínima por clic</span><span class="input-alert" style="hidden">Indica cuánto estás dispuesto a ofrecer por cada clic generado. Mientras más alto sea más influencers estarán dispuestos a participar y más rápido se alcanzará el objetivo.</span></div>
+                            <div class="reg-tit-smart"><h3>Oferta mínima: <span>$ 2.50</span></h3></div>
+                            <input type="text" class="in220-btm" placeholder="$ 2.50" value=""> 
+                        </div>
+                    </div>
+                    <div class="large-6 medium-6 small-12 columns">
+                        <div class='smart-box'>
+                            <div class="reg-tit-smart"><span class="reg-tit-span">Red Social</span><span class="input-alert" style="hidden">Selecciona la red social en la cual deseas desplegar esta línea de comunicación.</span></div>
+                            <div class="radio-two"><label for="fb">Facebook</label>
+                                <input type="radio" name="fb" id="cpc-si" value="si"></div>
+                            <div class="radio-two"><label for="tw">Twitter</label>
+                                <input type="radio" name="tw" id="cpc-si" value="si"></div>
+                        </div>
+                    </div>
+                </div>  
+                <div class="row mt20">
+                    <div class="title-row"><h1>Periodo de ejecución </h1><p> Indica el periodo durante el cual deseas que se realicen las publicaciones.</p></div>
+                    <div class="large-6 medium-6 small-12 columns">
+                        <div class='smart-box'>
+                            <div class="reg-tit-smart"><span class="reg-tit-span">Inicio de despliegue</span><span class="input-alert" style="hidden">Los mensajes pueden comenzar a desplegarse en cuanto se active la campaña o en una fecha que tú indiques.</span></div>
+                            <div class="radio-date">
+                                <input type="checkbox" name="" id="" value="" class="radio-date-check">
+                                <label>Deseo que los mensajes comiencen a publicarse en cuanto se active la campaña</label>    
+                            </div>
+                            <input type="text" id="datepicker" class="input-pick start">
+                        </div>
+                    </div>
+                    <div class="large-6 medium-6 small-12 columns">
+                        <div class='smart-box'>
+                            <div class="reg-tit-smart">
+                                <span class="reg-tit-span">Finalización de despliegue</span><span class="input-alert" style="hidden">Los mensajes pueden comenzar a desplegarse en cuanto se active la campaña o en una fecha que tú indiques.</span></div>
+                            <div class="radio-date">
+                                <input type="checkbox" name="" id="" value="" class="radio-date-check">
+                                <label>Deseo que los mensajes comiencen a publicarse en cuanto se active la campaña</label>
+                            </div>
+                            <input type="text" id="datepicker2" class="input-pick end">
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt20">
+                    <div class="title-row"><h1>Horarios de publicación </h1><p> A partir de un análisis minucioso que hacemos, nos es posible determinar los mejores momentos para lanzar las publicaciones. De lo contrario podemos publicar en los horarios que tú indiques.</p></div>
+                    <div class="large-12 medium-12 small-12 columns">
+                        <div class='smart-box'>
+                            <div class="reg-tit-smart"><span class="reg-tit-span">Inicio de despliegue</span><span class="input-alert" style="hidden">Los mensajes pueden comenzar a desplegarse en cuanto se active la campaña o en una fecha que tú indiques.</span></div>
+                            <div class="radio-date">
+                                <input type="checkbox" name="" id="" value="" class="radio-date-check">
+                                <label>Deseo emplear los tiempos sugeridos por el sistema.</label>    
+                            </div>
+                            <div class="date-hrs">
+                                <input type="checkbox" name="" id="" value="" class="radio-date-check">
+                                <label>Lunes</label>  
+                                <select id="selectmenu" class="hrs-select">
+                                    <option>9:00 am</option>
+                                    <option>10:00 am</option>
+                                    <option selected="selected">12:00 pm</option>
+                                    <option>2:00 pm</option>
+                                    <option>3:00 pm</option>
+                                </select>
+                                <p class="hasta-hrs">a:</p>
+                                <select id="selectmenu" class="hrs-select">
+                                    <option>9:00 am</option>
+                                    <option>10:00 am</option>
+                                    <option selected="selected">12:00 pm</option>
+                                    <option>2:00 pm</option>
+                                    <option>3:00 pm</option>
+                                </select>
+                            </div>
+                            <div class="date-hrs">
+                                <input type="checkbox" name="" id="" value="" class="radio-date-check">
+                                <label>Martes</label>  
+                                <select id="selectmenu" class="hrs-select">
+                                    <option>9:00 am</option>
+                                    <option>10:00 am</option>
+                                    <option selected="selected">12:00 pm</option>
+                                    <option>2:00 pm</option>
+                                    <option>3:00 pm</option>
+                                </select>
+                                 <p class="hasta-hrs">a:</p>
+                                <select id="selectmenu" class="hrs-select">
+                                    <option>9:00 am</option>
+                                    <option>10:00 am</option>
+                                    <option selected="selected">12:00 pm</option>
+                                    <option>2:00 pm</option>
+                                    <option>3:00 pm</option>
+                                </select>
+                            </div>
+                            <div class="date-hrs">
+                                <input type="checkbox" name="" id="" value="" class="radio-date-check">
+                                <label>Miercoles</label>  
+                                <select id="selectmenu" class="hrs-select">
+                                    <option>9:00 am</option>
+                                    <option>10:00 am</option>
+                                    <option selected="selected">12:00 pm</option>
+                                    <option>2:00 pm</option>
+                                    <option>3:00 pm</option>
+                                </select>
+                                 <p class="hasta-hrs">a:</p>
+                                <select id="selectmenu" class="hrs-select">
+                                    <option>9:00 am</option>
+                                    <option>10:00 am</option>
+                                    <option selected="selected">12:00 pm</option>
+                                    <option>2:00 pm</option>
+                                    <option>3:00 pm</option>
+                                </select>
+                            </div>
+                            <div class="date-hrs">
+                                <input type="checkbox" name="" id="" value="" class="radio-date-check">
+                                <label>Jueves</label>  
+                                <select id="selectmenu" class="hrs-select">
+                                    <option>9:00 am</option>
+                                    <option>10:00 am</option>
+                                    <option selected="selected">12:00 pm</option>
+                                    <option>2:00 pm</option>
+                                    <option>3:00 pm</option>
+                                </select>
+                                 <p class="hasta-hrs">a:</p>
+                                <select id="selectmenu" class="hrs-select">
+                                    <option>9:00 am</option>
+                                    <option>10:00 am</option>
+                                    <option selected="selected">12:00 pm</option>
+                                    <option>2:00 pm</option>
+                                    <option>3:00 pm</option>
+                                </select>
+                            </div>
+                            <div class="date-hrs">
+                                <input type="checkbox" name="" id="" value="" class="radio-date-check">
+                                <label>Viernes</label>  
+                                <select id="selectmenu" class="hrs-select">
+                                    <option>9:00 am</option>
+                                    <option>10:00 am</option>
+                                    <option selected="selected">12:00 pm</option>
+                                    <option>2:00 pm</option>
+                                    <option>3:00 pm</option>
+                                </select>
+                                 <p class="hasta-hrs">a:</p>
+                                <select id="selectmenu" class="hrs-select">
+                                    <option>9:00 am</option>
+                                    <option>10:00 am</option>
+                                    <option selected="selected">12:00 pm</option>
+                                    <option>2:00 pm</option>
+                                    <option>3:00 pm</option>
+                                </select>
+                            </div>
+                            <div class="date-hrs">
+                                <input type="checkbox" name="" id="" value="" class="radio-date-check">
+                                <label>Sábado</label>  
+                                <select id="selectmenu" class="hrs-select">
+                                    <option>9:00 am</option>
+                                    <option>10:00 am</option>
+                                    <option selected="selected">12:00 pm</option>
+                                    <option>2:00 pm</option>
+                                    <option>3:00 pm</option>
+                                </select>
+                                 <p class="hasta-hrs">a:</p>
+                                <select id="selectmenu" class="hrs-select">
+                                    <option>9:00 am</option>
+                                    <option>10:00 am</option>
+                                    <option selected="selected">12:00 pm</option>
+                                    <option>2:00 pm</option>
+                                    <option>3:00 pm</option>
+                                </select>
+                            </div>
+                            <div class="date-hrs">
+                                <input type="checkbox" name="" id="" value="" class="radio-date-check">
+                                <label>Domingo</label>  
+                                <select id="selectmenu" class="hrs-select">
+                                    <option>9:00 am</option>
+                                    <option>10:00 am</option>
+                                    <option selected="selected">12:00 pm</option>
+                                    <option>2:00 pm</option>
+                                    <option>3:00 pm</option>
+                                </select>
+                                 <div class="hasta-hrs">a:</div>
+                                <select id="selectmenu" class="hrs-select">
+                                    <option>9:00 am</option>
+                                    <option>10:00 am</option>
+                                    <option selected="selected">12:00 pm</option>
+                                    <option>2:00 pm</option>
+                                    <option>3:00 pm</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt60">
+                    <div class="large-12 medium-12 small-12 columns">
+                        <input type="submit" class="btn-four" value="Guardar">
+                        <input type="submit" class="btn-fivec" value="Cancelar">
+                    </div>
+                </div>
+
+            </div><!--dash-->  
+
+            <script src="js/vendor/jquery.js"></script>
+            <script src="js/foundation.min.js"></script>
+            <script src="js/circle.js"></script>
+            <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+            <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+            <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+            <script>
+                $(document).foundation();
+            </script>   
+            <script>
+                $(function () {
+                    $("#datepicker").datepicker();
+                    $("#datepicker2").datepicker();
+                    $("#selectmenu").selectmenu();
+                });
+            </script>
+
+    </body>
+</html>

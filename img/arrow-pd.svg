@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="10px" height="6px" viewBox="0 0 10 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch Beta 3.4 (14761) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape Copy 5 + Shape Copy 6</title>
+    <desc>Created with Sketch Beta.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Dashboard_alt_3" sketch:type="MSArtboardGroup" transform="translate(-290.000000, -249.000000)" fill="#4A4A4A">
+            <g id="Shape-Copy-5-+-Shape-Copy-6" sketch:type="MSLayerGroup" transform="translate(290.000000, 249.000000)">
+                <path d="M0.932940015,0 L5.57230458,4.44485942 L4.63075889,4.45324423 L9.04984863,0.0746030406 L10,1.15847587 L5.58091026,5.53711706 L5.11375134,6 L4.63936457,5.54550187 L0,1.10064245 L0.932940015,0 L0.932940015,0 Z" id="Shape-Copy-5" sketch:type="MSShapeGroup"></path>
+                <path d="M0.932940015,6 L5.57230458,1.55514058 L4.63075889,1.54675577 L9.04984863,5.92539696 L10,4.84152413 L5.58091026,0.462882944 L5.11375134,0 L4.63936457,0.454498131 L0,4.89935755 L0.932940015,6 L0.932940015,6 Z" id="Shape-Copy-6" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

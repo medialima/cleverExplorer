@@ -1,0 +1,176 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Cleverflow | México</title>
+        
+        <link rel="stylesheet" href="css/foundation.css" />
+        <script src="js/vendor/modernizr.js"></script>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" media="all" href="css/jquery.circliful.css">
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+          <script src="js/sweetalert.min.js"></script> 
+          
+          <!--nuevo--><!--nuevo--><!--nuevo--><!--nuevo--><!--nuevo--><!--nuevo--><!--nuevo--><!--nuevo--><!--nuevo-->
+          <!--nuevo--><!--nuevo--><!--nuevo--><!--nuevo--><!--nuevo--><!--nuevo--><!--nuevo--><!--nuevo--><!--nuevo--><!--nuevo-->
+          <!--nuevo--><!--nuevo--><!--nuevo--> 
+          
+            <script src="js/jquery.circlechart.js" type="text/javascript"></script>
+    <style>
+.demo {
+  max-width: 960px;
+  margin: 150px auto;
+}
+
+.demo > div {
+  float: left;
+  margin: 20px;
+}
+</style>
+    </head>
+    <body class="login-bg">
+        
+      <!--  <div id="wrapper">-->
+            
+      <div class="head">
+          <div class="row head">
+              <div class="medium-12 columns">
+                  <div class="nav-wrap">
+                  <div class="cleverflow-logo"><a href="index.php"></a></div>
+                  <div class="nav">
+                      <div class="m1"><a href="#">Dashboard</a></div>
+                      <div class="m2"><a href="#">Oportunidades</a></div>
+                      <div class="m3"><a href="#">Configuración</a></div>
+                      <div class="m4"><a href="#">Salir</a></div>
+                      <div class="m5"><a href="#" class="show_hide">18</a></div>
+                  </div><!--nav-->
+                  </div><!--nav-wrap-->
+              </div><!--column-->
+          </div><!--row-->
+      </div><!--head-->
+            
+            <div class="dashboard">
+                <div class="notifications">
+                <div class="slidingDiv" style="display: none">
+                    <div class="not-row">
+                        <div class="not-type">Transferencia</div>
+                        <div class="not-cont"><a href="#">Aqui podemos tener notificaciones de todo tipo</a></div>
+                    </div>
+                    <div class="not-row">
+                        <div class="not-type">Oportunidad</div>
+                        <div class="not-cont"><a href="#">Aqui podemos tener notificaciones de todo tipo</a></div>
+                    </div>
+                    <div class="not-row">
+                        <div class="not-type">Cuenta</div>
+                        <div class="not-cont"><a href="#">Aqui podemos tener notificaciones de todo tipo incluso a dos lineas</a></div>
+                    </div>
+					<div class="not-row">
+                        <div class="not-type">Cuenta</div>
+                        <div class="not-cont"><a href="#">Aqui podemos tener notificaciones de todo tipo incluso a dos lineas</a></div>
+                    </div>
+					<div class="not-row">
+                        <div class="not-type">Cuenta</div>
+                        <div class="not-cont"><a href="#">Aqui podemos tener notificaciones de todo tipo incluso a dos lineas</a></div>
+                    </div>
+		<div class="more-not"><a href="notificaciones.html">Ver mas</a></div>
+                </div>
+            </div>
+             
+            
+                <div class="row">
+   
+					<button id="calcular">calcurla</button>
+                </div>
+                
+              
+            </div><!--dash-->
+     <!--   </div>Wraper-->
+     
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/foundation.min.js"></script>
+          
+        <script>
+            $(document).foundation();
+        </script>
+      <script src="js/jquery.circlechart.js" type="text/javascript"></script>  
+<script>
+$('.demo-1').percentcircle();
+
+$('.demo-2').percentcircle({
+animate : true,
+diameter : 100,
+guage: 3,
+coverBg: '#fff',
+bgColor: '#efefef',
+fillColor: '#E95546',
+percentSize: '15px',
+percentWeight: 'normal'
+});
+
+$('.demo-3').percentcircle({
+animate : true,
+diameter : 100,
+guage: 3,
+coverBg: '#fff',
+bgColor: '#efefef',
+fillColor: '#DA4453',
+percentSize: '18px',
+percentWeight: 'normal'
+});
+$('.demo-4').percentcircle({
+animate : true,
+diameter : 100,
+guage: 3,
+coverBg: '#fff',
+bgColor: '#efefef',
+fillColor: '#46CFB0',
+percentSize: '18px',
+percentWeight: 'normal'
+});		
+$('.demo-5').percentcircle({
+animate : true,
+diameter : 100,
+guage: 3,
+coverBg: '#fff',
+bgColor: '#efefef',
+fillColor: '#8BC163',
+percentSize: '18px',
+percentWeight: '20px'
+});	
+$('.demo-6').percentcircle({
+animate : true,
+diameter : 100,
+guage: 10,
+coverBg: '#fff',
+bgColor: '#efefef',
+fillColor: '#D870A9',
+percentSize: '18px',
+percentWeight: 'normal'
+});
+
+$( "#calcular" ).click(function(event) {
+            event.preventDefault();
+           $('#demo').html('');
+          $('#demo').html('<div class="demo-4" data-percent="90"></div>');
+		  $('.demo-4').percentcircle({
+				animate : true,
+				diameter : 100,
+				guage: 3,
+				coverBg: '#fff',
+				bgColor: '#efefef',
+				fillColor: '#46CFB0',
+				percentSize: '18px',
+				percentWeight: 'normal'
+				});	
+        });
+			
+	</script>
+
+</body>
+
+</html>

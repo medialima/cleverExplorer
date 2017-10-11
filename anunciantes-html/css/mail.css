@@ -1,0 +1,46 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 1, 2015, 8:28:59 PM
+    Author     : imac-dos
+*/
+@import "compass/css3";
+
+$letter: #FFF;
+$bg: #EBABAB;
+$thickness: 5;
+
+body {
+  background-color: $bg;
+}
+.letter {
+  margin: 110px auto;
+  background-color: $letter;
+  position: relative;
+  height: 70px;
+  width: 100px;
+  overflow: hidden;
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    height: 60px;
+    width: 60px;
+    transform: rotate(45deg) skew(-5deg,-5deg);
+    margin-left: -50px;
+    height: 100px;
+    width: 100px;
+    background-color: $letter;
+  }
+  &:before {
+    bottom: -100%;
+    box-shadow: -#{$thickness}px -#{$thickness}px 0 0 $bg;
+  }
+  &:after {
+    top: -95%;
+    box-shadow: #{$thickness}px #{$thickness}px 0 0 $bg;
+  }
+}

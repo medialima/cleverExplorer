@@ -1,0 +1,54 @@
+
+            <div class="row">
+                <div class="dash-bg">
+                    <div class="large-12 columns">
+                        <div class="not-tit">Notificaciones</div>
+                        <div class="not-filter">
+                                <h1>Mostrar</h1>
+                                <div class="wrap">
+                                 <select id="" class="select-not">
+                                    <option value="tw">Todas las notificaciones</option>
+                                    <option value="fb">Sistema</option>
+                                    <option value="ig">Cuenta</option>
+                                    <option value="ot">Pagos</option>
+                            </select>
+                            <select id="" class="select-net">
+                                    <option value="">No leídas</option>
+                                    <option value="">Leídas</option>
+                            </select>
+                            </div>
+                            </div>
+                        <div class="not-row full">
+                            <div class="not-type full">Cuenta<span>22/04/16</span></div>
+                            <div class="not-cont full">Aqui podemos tener notificaciones de todo tipo incluso a dos lineas</div>
+                            <div class="not-chck"><img src="img/unchck.png" width="22px" height="22px" alt="unchck" id="pic" class="portrait" onclick="changeImage()"></div>
+                        </div>
+                        <div class="not-row full">
+                            <div class="not-type full">Oportunidad<span>22/04/16</span></div>
+                            <div class="not-cont full">Aqui podemos tener notificaciones de todo tipo incluso a dos lineas </div>
+                            <div class="not-chck"><img src="img/unchck.png" width="22px" height="22px" alt="unchck" id="pic" class="portrait" onclick="changeImage()"></div>
+                        </div>
+                        <div class="not-row full">
+                            <div class="not-type full">Cuenta<span>22/04/16</span></div>
+                            <div class="not-cont full">Aqui podemos tener notificaciones de todo tipo incluso a dos lineas</div>
+                            <div class="not-chck"><img src="img/unchck.png" width="22px" height="22px" alt="unchck" id="pic" class="portrait" onclick="changeImage()"></div>
+                        </div>
+                    </div><!--colum-->
+                </div><!--dash-BG-->
+            </div> <!--Row-->
+
+
+<div class="load"></div>
+
+
+
+<script>
+        $body = $("body");
+        $(document).on({
+    ajaxStart: function() { $body.addClass("loading");    },
+     ajaxStop: function() { $body.removeClass("loading"); }    
+});
+$(document).on("click", function(){
+    $.get("");        
+});
+    </script>
